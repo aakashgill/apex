@@ -53,7 +53,7 @@
             background-repeat: no-repeat;
             background-size: 350%;
             border: 2px solid grey;
-            opacity: 0.8;
+            opacity: 0.9;
         }
         .legend__img:hover {
             opacity: 1;
@@ -71,6 +71,7 @@
             width: 100%;
             transform: translateX(-50%);
         }
+        
         @media screen and (max-width: 1024px) {
             header {
                 text-align: center;
@@ -93,6 +94,14 @@
             .legend {
                 width: 120px;
             }
+            .sticky {
+                position: sticky;
+                width: 100%;
+                z-index: 1;
+                padding: 10px;
+                top: 0;
+                background: rgba(0,0,0,0.2);
+            }
         }
     </style>
 </head>
@@ -101,7 +110,7 @@
         <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/logos/apex-copyright-sigil-white.png" alt="">
     </header>
     <main>
-        <div>
+        <div class="sticky">
             <h1>Bloodhound</h1>
             <h2>Technological Tracker</h2>
         </div>
